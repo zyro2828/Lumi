@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lumi — AI Voice Studio</title>
+
+    <meta name="description"
+          content="Lumi is an AI-powered voice studio for text-to-speech, speech-to-text, audio extraction and video transcription.">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         LANDING PAGE
+    ========================== -->
+
+    <div id="landing-page">
+
+        <!-- Navigation -->
+        <header class="navbar">
+            <div class="nav-container">
+
+                <a href="#" class="logo" onclick="showLanding(); return false;">
+                    <span class="logo-mark">L</span>
+                    <span class="logo-text">Lumi</span>
+                </a>
+
+                <nav class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How it works</a>
+                    <a href="#about">About</a>
+                </nav>
+
+                <button type="button"
+                        class="nav-button"
+                        onclick="openWorkspace()">
+                    Get Started
+                    <span>→</span>
+                </button>
+
+            </div>
+        </header>
+
+        <!-- Main Landing Content -->
+        <main>
+
+            <!-- Hero -->
+            <section class="hero">
+
+                <div class="hero-content">
+
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        AI-powered voice studio
+                    </div>
+
+                    <h1>
+                        Turn words into
+                        <span class="gradient-text">sound.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Create natural speech, transcribe audio, extract
+                        voices from videos, and turn entire videos into text —
+                        all in one simple workspace.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <button type="button"
+                                class="primary-button"
+                                onclick="openWorkspace()">
+                            Start creating
+                            <span>→</span>
+                        </button>
+
+                        <a href="#features" class="secondary-button">
+                            Explore features
+                        </a>
+
+                    </div>
+
+                    <div class="hero-note">
+                        <span>✦</span>
+                        One workspace. Four powerful voice tools.
+                    </div>
+
+                </div>
+
+                <!-- Hero Product Preview -->
+                <div class="hero-preview">
+
+                    <div class="preview-glow"></div>
+
+                    <div class="preview-window">
+
+                        <div class="preview-header">
+
+                            <div class="preview-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="preview-title">
+                                Lumi Studio
+                            </span>
+
+                            <span class="preview-status">
+                                <span></span>
+                                Ready
+                            </span>
+
+                        </div>
+
+                        <div class="preview-body">
+
+                            <div class="preview-sidebar">
+
+                                <div class="preview-brand">
+                                    <span class="mini-logo">L</span>
+                                    Lumi
+                                </div>
+
+                                <div class="preview-nav active">
+                                    <span>◈</span>
+                                    Text to Speech
+                                </div>
+
+                                <div class="preview-nav">
+                                    <span>◉</span>
+                                    Speech to Text
+                                </div>
+
+                                <div class="preview-nav">
+                                    <span>◇</span>
+                                    Extract Voice
+                                </div>
+
+                                <div class="preview-nav">
+                                    <span>▣</span>
+                                    Video to Text
+                                </div>
+
+                            </div>
+
+                            <div class="preview-main">
+
+                                <div class="preview-heading">
+                                    <div>
+                                        <span class="small-label">
+                                            TEXT TO SPEECH
+                                        </span>
+
+                                        <h3>
+                                            Give your words a voice
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div class="fake-editor">
+
+                                    <span class="fake-editor-label">
+                                        Your text
+                                    </span>
+
+                                    <p>
+                                        Turn your ideas into natural,
+                                        expressive speech with Lumi.
+                                    </p>
+
+                                    <span class="fake-cursor"></span>
+
+                                </div>
+
+                                <div class="fake-controls">
+
+                                    <div class="fake-control">
+                                        <span>Language</span>
+                                        <strong>English</strong>
+                                    </div>
+
+                                    <div class="fake-control">
+                                        <span>Voice</span>
+                                        <strong>Natural Voice</strong>
+                                    </div>
+
+                                    <button type="button" class="fake-generate">
+                                        Generate
+                                        <span>→</span>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Intro Strip -->
+            <section class="intro-strip">
+
+                <div class="intro-item">
+
+                    <span class="intro-icon">✦</span>
+
+                    <div>
+                        <strong>AI-powered</strong>
+                        <span>Natural voice processing</span>
+                    </div>
+
+                </div>
+
+                <div class="intro-divider"></div>
+
+                <div class="intro-item">
+
+                    <span class="intro-icon">◉</span>
+
+                    <div>
+                        <strong>Simple workflow</strong>
+                        <span>Upload, process, download</span>
+                    </div>
+
+                </div>
+
+                <div class="intro-divider"></div>
+
+                <div class="intro-item">
+
+                    <span class="intro-icon">↗</span>
+
+                    <div>
+                        <strong>One workspace</strong>
+                        <span>Everything in one place</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Features -->
+            <section class="section features-section"
+                     id="features">
+
+                <div class="section-heading">
+
+                    <div class="section-tag">
+                        CAPABILITIES
+                    </div>
+
+                    <h2>
+                        Everything you need
+                        <span>for voice.</span>
+                    </h2>
+
+                    <p>
+                        Four focused tools designed to make working with
+                        speech and video simple.
+                    </p>
+
+                </div>
+
+                <div class="feature-grid">
+
+                    <article class="feature-card feature-card-large"
+                             onclick="openTool('tts')">
+
+                        <div class="feature-card-top">
+                            <span class="feature-number">01</span>
+                            <span class="feature-arrow">↗</span>
+                        </div>
+
+                        <div class="feature-icon">
+                            ◉
+                        </div>
+
+                        <h3>Text to Speech</h3>
+
+                        <p>
+                            Transform written text into natural-sounding
+                            speech with selectable voices and languages.
+                        </p>
+
+                        <div class="feature-preview-line">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </article>
+
+                    <article class="feature-card"
+                             onclick="openTool('stt')">
+
+                        <div class="feature-card-top">
+                            <span class="feature-number">02</span>
+                            <span class="feature-arrow">↗</span>
+                        </div>
+
+                        <div class="feature-icon">
+                            ◈
+                        </div>
+
+                        <h3>Speech to Text</h3>
+
+                        <p>
+                            Convert recorded or uploaded speech into
+                            editable text.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card"
+                             onclick="openTool('extract')">
+
+                        <div class="feature-card-top">
+                            <span class="feature-number">03</span>
+                            <span class="feature-arrow">↗</span>
+                        </div>
+
+                        <div class="feature-icon">
+                            ◇
+                        </div>
+
+                        <h3>Extract Voice</h3>
+
+                        <p>
+                            Extract the audio track from your video and
+                            save it as a separate audio file.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card feature-card-wide"
+                             onclick="openTool('video-text')">
+
+                        <div class="feature-card-top">
+                            <span class="feature-number">04</span>
+                            <span class="feature-arrow">↗</span>
+                        </div>
+
+                        <div class="feature-wide-content">
+
+                            <div class="feature-icon">
+                                ▣
+                            </div>
+
+                            <div>
+
+                                <h3>Video to Text</h3>
+
+                                <p>
+                                    Extract speech from a video and
+                                    transform it into a searchable,
+                                    downloadable transcript.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- How It Works -->
+            <section class="section workflow-section"
+                     id="how-it-works">
+
+                <div class="section-heading">
+
+                    <div class="section-tag">
+                        HOW IT WORKS
+                    </div>
+
+                    <h2>
+                        From input to
+                        <span>result.</span>
+                    </h2>
+
+                    <p>
+                        A straightforward workflow with no unnecessary
+                        complexity.
+                    </p>
+
+                </div>
+
+                <div class="workflow">
+
+                    <div class="workflow-step">
+
+                        <div class="workflow-number">
+                            01
+                        </div>
+
+                        <h3>Choose a tool</h3>
+
+                        <p>
+                            Select the voice task you want to perform.
+                        </p>
+
+                    </div>
+
+                    <div class="workflow-line"></div>
+
+                    <div class="workflow-step">
+
+                        <div class="workflow-number">
+                            02
+                        </div>
+
+                        <h3>Add your content</h3>
+
+                        <p>
+                            Type text, record audio, or upload a media file.
+                        </p>
+
+                    </div>
+
+                    <div class="workflow-line"></div>
+
+                    <div class="workflow-step">
+
+                        <div class="workflow-number">
+                            03
+                        </div>
+
+                        <h3>Process with AI</h3>
+
+                        <p>
+                            Let Lumi process your content and prepare
+                            the result.
+                        </p>
+
+                    </div>
+
+                    <div class="workflow-line"></div>
+
+                    <div class="workflow-step">
+
+                        <div class="workflow-number">
+                            04
+                        </div>
+
+                        <h3>Use your result</h3>
+
+                        <p>
+                            Listen, copy, or download your generated result.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- About -->
+            <section class="section about-section"
+                     id="about">
+
+                <div class="about-card">
+
+                    <div class="about-content">
+
+                        <div class="section-tag">
+                            ONE PLACE FOR VOICE
+                        </div>
+
+                        <h2>
+                            Work with audio
+                            <span>without the friction.</span>
+                        </h2>
+
+                        <p>
+                            Lumi brings common voice and video tasks into
+                            one focused workspace. Instead of switching
+                            between different tools, you can create,
+                            transcribe, extract, and transform your media
+                            from a single interface.
+                        </p>
+
+                        <button type="button"
+                                class="primary-button"
+                                onclick="openWorkspace()">
+                            Open Lumi Studio
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                    <div class="about-visual">
+
+                        <div class="about-orb orb-one"></div>
+                        <div class="about-orb orb-two"></div>
+
+                        <div class="about-center">
+                            <span>✦</span>
+                            <strong>LUMI</strong>
+                            <small>VOICE STUDIO</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- CTA -->
+            <section class="cta-section">
+
+                <div class="cta-card">
+
+                    <div class="cta-glow"></div>
+
+                    <div class="section-tag">
+                        READY WHEN YOU ARE
+                    </div>
+
+                    <h2>
+                        Give your content
+                        <span>a voice.</span>
+                    </h2>
+
+                    <p>
+                        Explore the Lumi workspace and start working
+                        with speech and video.
+                    </p>
+
+                    <button type="button"
+                            class="primary-button cta-button"
+                            onclick="openWorkspace()">
+                        Get started
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="footer-container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <span class="logo-mark">L</span>
+                        <span class="logo-text">Lumi</span>
+                    </a>
+
+                    <p>
+                        A modern AI voice studio for speech and video.
+                    </p>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How it works</a>
+                    <a href="#about">About</a>
+
+                </div>
+
+                <div class="footer-copy">
+                    © 2026 Lumi. Built for the future of voice.
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <!-- =========================
+         LUMI STUDIO / APPLICATION
+    ========================== -->
+
+    <div id="workspace"
+         class="workspace hidden">
+
+        <!-- Sidebar -->
+        <aside class="workspace-sidebar">
+
+            <div class="workspace-brand">
+
+                <a href="#"
+                   class="logo"
+                   onclick="showLanding(); return false;">
+                    <span class="logo-mark">L</span>
+                    <span class="logo-text">Lumi</span>
+                </a>
+
+                <span class="studio-label">
+                    STUDIO
+                </span>
+
+            </div>
+
+            <nav class="workspace-navigation">
+
+                <div class="workspace-nav-label">
+                    TOOLS
+                </div>
+
+                <button type="button"
+                        class="workspace-nav-item active"
+                        data-tool="tts"
+                        onclick="openTool('tts')">
+                    <span class="workspace-nav-icon">◉</span>
+                    <span>Text to Speech</span>
+                </button>
+
+                <button type="button"
+                        class="workspace-nav-item"
+                        data-tool="stt"
+                        onclick="openTool('stt')">
+                    <span class="workspace-nav-icon">◈</span>
+                    <span>Speech to Text</span>
+                </button>
+
+                <button type="button"
+                        class="workspace-nav-item"
+                        data-tool="extract"
+                        onclick="openTool('extract')">
+                    <span class="workspace-nav-icon">◇</span>
+                    <span>Extract Voice</span>
+                </button>
+
+                <button type="button"
+                        class="workspace-nav-item"
+                        data-tool="video-text"
+                        onclick="openTool('video-text')">
+                    <span class="workspace-nav-icon">▣</span>
+                    <span>Video to Text</span>
+                </button>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <div class="sidebar-info">
+
+                    <span class="sidebar-info-icon">
+                        ✦
+                    </span>
+
+                    <div>
+                        <strong>Lumi Studio</strong>
+                        <small>AI Voice Workspace</small>
+                    </div>
+
+                </div>
+
+                <button type="button"
+                        class="back-home"
+                        onclick="showLanding()">
+                    ← Back to home
+                </button>
+
+            </div>
+
+        </aside>
+
+        <!-- Workspace Main -->
+        <main class="workspace-main">
+
+            <header class="workspace-header">
+
+                <div>
+
+                    <span class="workspace-breadcrumb">
+                        LUMI / STUDIO
+                    </span>
+
+                    <h1 id="workspace-title">
+                        Text to Speech
+                    </h1>
+
+                </div>
+
+                <div class="workspace-header-status">
+                    <span></span>
+                    Ready
+                </div>
+
+            </header>
+
+            <!-- =========================
+                 TEXT TO SPEECH
+            ========================== -->
+
+            <section id="tool-tts"
+                     class="tool-page active-tool">
+
+                <div class="tool-intro">
+
+                    <span class="section-tag">
+                        TEXT TO SPEECH
+                    </span>
+
+                    <h2>
+                        Give your words a voice.
+                    </h2>
+
+                    <p>
+                        Write or import text and turn it into natural
+                        speech.
+                    </p>
+
+                </div>
+
+                <div class="tool-grid">
+
+                    <div class="tool-card editor-card">
+
+                        <div class="tool-card-header">
+
+                            <div>
+                                <span class="card-label">
+                                    YOUR TEXT
+                                </span>
+
+                                <h3>
+                                    What would you like to say?
+                                </h3>
+                            </div>
+
+                            <label class="upload-small">
+
+                                <input type="file"
+                                       accept=".txt,text/plain"
+                                       onchange="handleTextFile(this)">
+
+                                Import TXT
+
+                            </label>
+
+                        </div>
+
+                        <textarea id="tts-text"
+                                  class="text-editor"
+                                  placeholder="Type or paste your text here..."></textarea>
+
+                        <div class="editor-footer">
+
+                            <span id="character-count">
+                                0 characters
+                            </span>
+
+                            <button type="button"
+                                    class="clear-button"
+                                    onclick="clearTTS()">
+                                Clear
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tool-card settings-card">
+
+                        <div class="tool-card-header">
+
+                            <div>
+
+                                <span class="card-label">
+                                    VOICE SETTINGS
+                                </span>
+
+                                <h3>
+                                    Choose your voice
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <div class="setting-group">
+
+                            <label for="tts-style">
+                                Style
+                            </label>
+
+                            <select id="tts-style">
+                                <option value="neutral">Natural</option>
+                                <option value="cheerful">Cheerful and friendly</option>
+                                <option value="calm">Calm and relaxed</option>
+                                <option value="warm">Warm and gentle</option>
+                                <option value="energetic">Energetic and upbeat</option>
+                                <option value="serious">Serious and professional</option>
+                                <option value="whisper">Whispering</option>
+                            </select>
+
+                        </div>
+
+                        <div class="setting-group">
+
+                            <label for="tts-voice">
+                                Voice
+                            </label>
+
+                            <select id="tts-voice">
+                                <option value="Kore">Kore (firm)</option>
+                                <option value="Puck">Puck (upbeat)</option>
+                                <option value="Charon">Charon (informative)</option>
+                                <option value="Aoede">Aoede (breezy)</option>
+                                <option value="Leda">Leda (youthful)</option>
+                                <option value="Sulafat">Sulafat (warm)</option>
+                                <option value="Achird">Achird (friendly)</option>
+                                <option value="Zephyr">Zephyr (bright)</option>
+                                <option value="Fenrir">Fenrir (excitable)</option>
+                                <option value="Orus">Orus (firm)</option>
+                                <option value="Gacrux">Gacrux (mature)</option>
+                                <option value="Vindemiatrix">Vindemiatrix (gentle)</option>
+                            </select>
+
+                        </div>
+
+                        <button type="button"
+                                id="tts-generate"
+                                class="generate-button"
+                                onclick="generateSpeech()">
+                            <span id="tts-generate-label">Generate Speech</span>
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="result-card" id="tts-result">
+
+                    <div class="result-placeholder">
+
+                        <div class="result-icon">
+                            ◉
+                        </div>
+
+                        <h3>
+                            Your generated speech will appear here
+                        </h3>
+
+                        <p>
+                            Add some text above and generate your audio.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- =========================
+                 SPEECH TO TEXT
+            ========================== -->
+
+            <section id="tool-stt"
+                     class="tool-page">
+
+                <div class="tool-intro">
+
+                    <span class="section-tag">
+                        SPEECH TO TEXT
+                    </span>
+
+                    <h2>
+                        Turn speech into text.
+                    </h2>
+
+                    <p>
+                        Record your voice or upload an audio file to create
+                        a transcript.
+                    </p>
+
+                </div>
+
+                <div class="upload-card">
+
+                    <div class="upload-icon">
+                        ◈
+                    </div>
+
+                    <h3>
+                        Upload an audio file
+                    </h3>
+
+                    <p>
+                        MP3, WAV, M4A and other supported audio formats
+                    </p>
+
+                    <label class="upload-button">
+
+                        <input id="stt-file"
+                               type="file"
+                               accept="audio/*,.webm,.m4a,.mp3,.wav,.ogg,.flac"
+                               onchange="handleSttFile(this)">
+
+                        Choose audio file
+
+                    </label>
+
+                    <div class="upload-divider">
+                        <span>or</span>
+                    </div>
+
+                    <button type="button"
+                            id="stt-record"
+                            class="record-button"
+                            onclick="toggleRecording()">
+                        <span class="record-dot"></span>
+                        <span id="stt-record-label">Record from microphone</span>
+                    </button>
+
+                    <div id="stt-selected" class="selected-file hidden">
+
+                        <div class="selected-file-top">
+                            <div class="selected-file-info">
+                                <strong id="stt-file-name">audio</strong>
+                                <small id="stt-file-size"></small>
+                            </div>
+
+                            <button type="button"
+                                    class="remove-file"
+                                    onclick="removeSttFile()"
+                                    aria-label="Remove audio">
+                                ✕
+                            </button>
+                        </div>
+
+                        <audio id="stt-preview" controls></audio>
+
+                    </div>
+
+                    <div class="stt-options">
+
+                        <div class="setting-group">
+                            <label for="stt-language">Spoken language</label>
+                            <select id="stt-language">
+                                <option value="">Auto-detect</option>
+                                <option value="en">English</option>
+                                <option value="az">Azerbaijani</option>
+                                <option value="tr">Turkish</option>
+                                <option value="de">German</option>
+                                <option value="es">Spanish</option>
+                            </select>
+                        </div>
+
+                        <button type="button"
+                                id="stt-transcribe"
+                                class="transcribe-button"
+                                onclick="transcribeAudio()"
+                                disabled>
+                            <span id="stt-transcribe-label">Transcribe</span>
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="result-card transcript-preview">
+
+                    <div class="transcript-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                TRANSCRIPTION
+                            </span>
+
+                            <h3>
+                                Your transcript
+                            </h3>
+
+                        </div>
+
+                        <div class="result-actions">
+
+                            <button type="button"
+                                    onclick="clearStt()">
+                                Clear
+                            </button>
+
+
+                            <button type="button"
+                                    onclick="copyResult()">
+                                Copy
+                            </button>
+
+                            <button type="button"
+                                    onclick="downloadTranscript()">
+                                Download TXT
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div id="stt-result"
+                         class="empty-transcript">
+                        <span>◈</span>
+
+                        <p>
+                            Your transcription will appear here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- =========================
+                 EXTRACT VOICE
+            ========================== -->
+
+            <section id="tool-extract"
+                     class="tool-page">
+
+                <div class="tool-intro">
+
+                    <span class="section-tag">
+                        EXTRACT VOICE
+                    </span>
+
+                    <h2>
+                        Separate audio from video.
+                    </h2>
+
+                    <p>
+                        Upload a video and extract its audio track as a
+                        separate file.
+                    </p>
+
+                </div>
+
+                <div class="upload-card large-upload">
+
+                    <div class="upload-icon">
+                        ◇
+                    </div>
+
+                    <h3>
+                        Drop your video here
+                    </h3>
+
+                    <p>
+                        Upload a video file to extract its audio.
+                    </p>
+
+                    <label class="upload-button">
+
+                        <input id="extract-file"
+                               type="file"
+                               accept="video/*"
+                               onchange="handleVideoFile(this, 'extract')">
+
+                        Choose video
+
+                    </label>
+
+                    <div id="extract-selected" class="selected-file hidden">
+
+                        <div class="selected-file-top">
+                            <div class="selected-file-info">
+                                <strong id="extract-file-name">video</strong>
+                                <small id="extract-file-size"></small>
+                            </div>
+
+                            <button type="button"
+                                    class="remove-file"
+                                    onclick="removeVideoFile('extract')"
+                                    aria-label="Remove video">
+                                ✕
+                            </button>
+                        </div>
+
+                        <video id="extract-preview" controls preload="metadata"></video>
+
+                    </div>
+
+                    <div class="video-actions">
+
+                        <button type="button"
+                                id="extract-run"
+                                class="transcribe-button"
+                                onclick="extractAudio()"
+                                disabled>
+                            <span id="extract-run-label">Extract Voice</span>
+                            <span>→</span>
+                        </button>
+
+                        <button type="button"
+                                class="reset-button"
+                                onclick="clearExtract()">
+                            Reset
+                        </button>
+                    </div>
+
+
+                </div>
+
+                <div class="result-card" id="extract-result">
+
+                    <div class="result-placeholder">
+
+                        <div class="result-icon">
+                            ◇
+                        </div>
+
+                        <h3>
+                            Extracted audio will appear here
+                        </h3>
+
+                        <p>
+                            Upload a video to get started.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- =========================
+                 VIDEO TO TEXT
+            ========================== -->
+
+            <section id="tool-video-text"
+                     class="tool-page">
+
+                <div class="tool-intro">
+
+                    <span class="section-tag">
+                        VIDEO TO TEXT
+                    </span>
+
+                    <h2>
+                        Turn video into a transcript.
+                    </h2>
+
+                    <p>
+                        Extract the voice from your video and transform it
+                        into editable text.
+                    </p>
+
+                </div>
+
+                <div class="upload-card large-upload">
+
+                    <div class="upload-icon">
+                        ▣
+                    </div>
+
+                    <h3>
+                        Upload your video
+                    </h3>
+
+                    <p>
+                        Lumi will extract the audio and prepare a
+                        transcription.
+                    </p>
+
+                    <label class="upload-button">
+
+                        <input id="video-text-file"
+                               type="file"
+                               accept="video/*"
+                               onchange="handleVideoFile(this, 'video-text')">
+
+                        Choose video
+
+                    </label>
+
+                    <div id="video-text-selected" class="selected-file hidden">
+
+                        <div class="selected-file-top">
+                            <div class="selected-file-info">
+                                <strong id="video-text-file-name">video</strong>
+                                <small id="video-text-file-size"></small>
+                            </div>
+
+                            <button type="button"
+                                    class="remove-file"
+                                    onclick="removeVideoFile('video-text')"
+                                    aria-label="Remove video">
+                                ✕
+                            </button>
+                        </div>
+
+                        <video id="video-text-preview" controls preload="metadata"></video>
+
+                    </div>
+
+                    <div class="video-actions">
+
+                        <div class="setting-group">
+                            <label for="video-text-language">Spoken language</label>
+                            <select id="video-text-language">
+                                <option value="">Auto-detect</option>
+                                <option value="en">English</option>
+                                <option value="az">Azerbaijani</option>
+                                <option value="tr">Turkish</option>
+                                <option value="de">German</option>
+                                <option value="es">Spanish</option>
+                            </select>
+                        </div>
+
+                        <button type="button"
+                                id="video-text-run"
+                                class="transcribe-button"
+                                onclick="transcribeVideo()"
+                                disabled>
+                            <span id="video-text-run-label">Start Transcription</span>
+                            <span>→</span>
+                        </button>
+
+                        <button type="button"
+                                class="reset-button"
+                                onclick="clearVideoText()">
+                            Reset
+                        </button>
+                    </div>
+
+
+                </div>
+
+                <div class="processing-flow">
+
+                    <div class="flow-item" data-stage="upload">
+                        <span>01</span>
+                        Upload
+                    </div>
+
+                    <div class="flow-arrow">
+                        →
+                    </div>
+
+                    <div class="flow-item" data-stage="extract">
+                        <span>02</span>
+                        Extract
+                    </div>
+
+                    <div class="flow-arrow">
+                        →
+                    </div>
+
+                    <div class="flow-item" data-stage="transcribe">
+                        <span>03</span>
+                        Transcribe
+                    </div>
+
+                    <div class="flow-arrow">
+                        →
+                    </div>
+
+                    <div class="flow-item" data-stage="result">
+                        <span>04</span>
+                        Result
+                    </div>
+
+                </div>
+
+                <div class="result-card transcript-preview">
+
+                    <div class="transcript-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                VIDEO TRANSCRIPT
+                            </span>
+
+                            <h3>
+                                Your result
+                            </h3>
+
+                        </div>
+
+                        <div class="result-actions">
+
+                            <button type="button"
+                                    onclick="clearVideoText()">
+                                Clear
+                            </button>
+
+
+                            <button type="button"
+                                    onclick="copyResult()">
+                                Copy
+                            </button>
+
+                            <button type="button"
+                                    onclick="downloadTranscript()">
+                                Download TXT
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div id="video-text-result"
+                         class="empty-transcript">
+
+                        <span>▣</span>
+
+                        <p>
+                            Your video transcription will appear here.
+                        </p>
+
+                    </div>
+
+                    <div id="video-text-audio" class="extracted-audio hidden"></div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast"
+         class="toast"
+         aria-live="polite">
+        <span>✦</span>
+
+        <span id="toast-message">
+            This feature will be connected soon.
+        </span>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
